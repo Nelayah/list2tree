@@ -1,6 +1,6 @@
-declare const _default: ({ idKey, parentIdKey, nameKey }: {
+declare const _default: ({ idKey, parentIdKey, newKey }: {
     idKey: any;
     parentIdKey: any;
-    nameKey: any;
+    newKey?: {};
 }) => (x: ReadonlyArray<{}>) => any;
 export default _default;

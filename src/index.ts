@@ -2,9 +2,9 @@ import * as R from 'ramda';
 
 const defaultArray: any = R.defaultTo([]);
 
-export default ({idKey, parentIdKey, nameKey}) => {
+export default ({idKey, parentIdKey, newKey = {}}) => {
   return R.pipe(
-    R.map(v => R.mergeDeepLeft(v, {title: v[nameKey], key: v[idKey], value: v[idKey]})),
+    R.map(v => R.mergeDeepLeft(v, R.mapObjIndexed((k: string) => v[k], newKey))),
     R.applySpec({list: R.identity, idMaps: R.reduce((a, b) => R.mergeDeepLeft(a, {[b[idKey]]: b}), Object.create(null))}),
     ({list, idMaps}, node = []) => {
       const hasParent = R.compose(R.has(R.__, idMaps), R.prop(parentIdKey));
