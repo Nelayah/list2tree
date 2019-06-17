@@ -1,0 +1,39 @@
+{
+  "name": "list2tree",
+  "version": "0.0.1",
+  "description": "It converts the list structure to the tree structure.",
+  "main": "lib/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "jest --config .jest.js --runInBand",
+    "version": "standard-version -- --release-as"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Nelayah/list2tree.git"
+  },
+  "keywords": [
+    "list",
+    "tree",
+    "function"
+  ],
+  "author": "hayalen",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/ramda": "^0.26.9",
+    "cz-conventional-changelog": "^2.1.0",
+    "jest": "latest",
+    "ramda": "latest",
+    "standard-version": "^4.4.0",
+    "ts-jest": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

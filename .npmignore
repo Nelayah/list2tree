@@ -1,0 +1,9 @@
+node_modules
+src
+.gitignore
+CHANGELOG.md
+.tslintignore
+tsconfig.json
+jsconfig.json
+.jest.js
+__tests__
