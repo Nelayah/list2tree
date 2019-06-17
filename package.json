@@ -1,6 +1,6 @@
 {
   "name": "list2tree",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "It converts the list structure to the tree structure.",
   "main": "lib/index.js",
   "scripts": {
